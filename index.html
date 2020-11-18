@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Card Effect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <audio id="myAudio" class="bbs" preload="auto" autoplay>
+      <source src="sound.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="container">
+        <div class="card">
+            <div class="sneaker">
+                <div class="circle"></div>
+                <img src="./circle-cropped.png" alt="adidas" />
+            </div>
+            <div class="info">
+                <h1 class="title">DIVYANSH SINGH</h1>
+                <h3>hey!! look into my website</h3>
+                <div class="sizes">
+                    <button class="active">intrests!!</button>
+                    <a href="contactme.html"><button class="active">projects</button></a
+            >
+            <a href="photos.html"> <button class="active">pics</button></a>
+                    <button class="active">blogs</button>
+                </div>
+                <div class="purchase">
+                    <button>contact me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+    <button onclick="playAudio()" type="button" class="ssound">Play</button>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+    </script>
+</body>
+
+</html>
